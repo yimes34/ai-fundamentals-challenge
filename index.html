@@ -21,25 +21,6 @@
           stroke-width="2"
           stroke-linecap="round"
           stroke-linejoin="round"
-          class="lucide lucide-bell-off-icon lucide-bell-off"
-        >
-          <path d="M10.268 21a2 2 0 0 0 3.464 0" />
-          <path
-            d="M17 17H4a1 1 0 0 1-.74-1.673C4.59 13.956 6 12.499 6 8a6 6 0 0 1 .258-1.742"
-          />
-          <path d="m2 2 20 20" />
-          <path d="M8.668 3.01A6 6 0 0 1 18 8c0 2.687.77 4.653 1.707 6.05" />
-        </svg>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
           class="lucide lucide-wifi-icon lucide-wifi"
         >
           <path d="M12 20h.01" />
@@ -50,6 +31,25 @@
       </div>
       <div class="status-bar__center"><span>17:09</span></div>
       <div class="status-bar__right">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-bell-off-icon lucide-bell-off"
+        >
+          <path d="M10.268 21a2 2 0 0 0 3.464 0" />
+          <path
+            d="M17 17H4a1 1 0 0 1-.74-1.673C4.59 13.956 6 12.499 6 8a6 6 0 0 1 .258-1.742"
+          />
+          <path d="m2 2 20 20" />
+          <path d="M8.668 3.01A6 6 0 0 1 18 8c0 2.687.77 4.653 1.707 6.05" />
+        </svg>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"
@@ -87,7 +87,42 @@
         </svg>
       </div>
     </section>
-    <section class="navigation"></section>
+    <section class="content">
+      <h1>Welcome to BerryTalk</h1>
+      <p>
+        If you have a Beery Account,<br />log in with your email or phone
+        number.
+      </p>
+    </section>
+    <section class="login">
+      <form action="login" method="post" class="login-form">
+        <input
+          class="login-form__email"
+          type="text"
+          name="email"
+          placeholder="Email or Phone Number"
+          required
+        />
+        <input
+          class="login-form__password"
+          type="password"
+          name="password"
+          placeholder="Password"
+          required
+        />
+        <button type="submit">Log In</button>
+      </form>
+      <button class="signup">Sign Up</button>
+      <p class="forgot-password">
+        Find <a href="#">Berry Account</a> or <a href="#">Password</a>
+      </p>
+    </section>
+    <section class="navigation">
+      <button class="nav-button">Profile</button>
+      <button class="nav-button">Chats</button>
+      <button class="nav-button">Find</button>
+      <button class="nav-button">Settings</button>
+    </section>
     <div id="no-mobile">
       <span>모바일📱에서만 사용 가능해요.</span>
     </div>
