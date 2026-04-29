@@ -1,0 +1,31 @@
+.my-profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+div.my-profile__profile-picture {
+  width: 6rem;
+  height: 6rem;
+}
+
+.my-profile__name {
+  display: block;
+  flex: 1;
+  font-size: 1.2rem;
+  font-family: "inter", sans-serif;
+  font-weight: 500;
+}
+
+.my-profile__multi-profile {
+  display: flex;
+  align-items: center;
+}
+
+.my-profile__multi-profile > div.profile-picture {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-left: -0.8rem;
+  background-color: rgba(100, 100, 100, 0.5);
+}

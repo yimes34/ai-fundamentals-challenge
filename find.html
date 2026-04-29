@@ -3,163 +3,378 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="common.css" />
-    <link rel="stylesheet" href="settings.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="css/find.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>BerryTalk</title>
   </head>
   <body>
-    <section class="status-bar">
-      <div class="status-bar__left">
-        <span>No Service</span>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-wifi-icon lucide-wifi"
-        >
-          <path d="M12 20h.01" />
-          <path d="M2 8.82a15 15 0 0 1 20 0" />
-          <path d="M5 12.859a10 10 0 0 1 14 0" />
-          <path d="M8.5 16.429a5 5 0 0 1 7 0" />
-        </svg>
+    <div class="wrapper">
+      <section class="common__status-bar">
+        <div class="common__status-bar__left">
+          <span>No Service</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-wifi-icon lucide-wifi"
+          >
+            <path d="M12 20h.01" />
+            <path d="M2 8.82a15 15 0 0 1 20 0" />
+            <path d="M5 12.859a10 10 0 0 1 14 0" />
+            <path d="M8.5 16.429a5 5 0 0 1 7 0" />
+          </svg>
+        </div>
+        <div class="common__status-bar__center"><span>17:09</span></div>
+        <div class="common__status-bar__right">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-bell-off-icon lucide-bell-off"
+          >
+            <path d="M10.268 21a2 2 0 0 0 3.464 0" />
+            <path
+              d="M17 17H4a1 1 0 0 1-.74-1.673C4.59 13.956 6 12.499 6 8a6 6 0 0 1 .258-1.742"
+            />
+            <path d="m2 2 20 20" />
+            <path d="M8.668 3.01A6 6 0 0 1 18 8c0 2.687.77 4.653 1.707 6.05" />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-alarm-clock-icon lucide-alarm-clock"
+          >
+            <circle cx="12" cy="13" r="8" />
+            <path d="M12 9v4l2 2" />
+            <path d="M5 3 2 6" />
+            <path d="m22 6-3-3" />
+            <path d="M6.38 18.7 4 21" />
+            <path d="M17.64 18.67 20 21" />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-battery-low-icon lucide-battery-low"
+          >
+            <path d="M22 14v-4" />
+            <path d="M6 14v-4" />
+            <rect x="2" y="6" width="16" height="12" rx="2" />
+          </svg>
+        </div>
+      </section>
+      <div class="content-wrapper">
+        <section class="header">
+          <h1 class="header__title">Find</h1>
+          <div class="header__actions">
+            <a href="">
+              <button class="header__search">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-search-icon lucide-search"
+                >
+                  <path d="m21 21-4.34-4.34" />
+                  <circle cx="11" cy="11" r="8" />
+                </svg></button
+            ></a>
+            <a href="settings.html">
+              <button class="header__setting">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-settings-icon lucide-settings"
+                >
+                  <path
+                    d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"
+                  />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+              </button>
+            </a>
+          </div>
+        </section>
+        <section class="add-friends">
+          <a href=""
+            ><button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-scan-qr-code-icon lucide-scan-qr-code"
+              >
+                <path d="M17 12v4a1 1 0 0 1-1 1h-4" />
+                <path d="M17 3h2a2 2 0 0 1 2 2v2" />
+                <path d="M17 8V7" />
+                <path d="M21 17v2a2 2 0 0 1-2 2h-2" />
+                <path d="M3 7V5a2 2 0 0 1 2-2h2" />
+                <path d="M7 17h.01" />
+                <path d="M7 21H5a2 2 0 0 1-2-2v-2" />
+                <rect x="7" y="7" width="5" height="5" rx="1" /></svg
+              ><span>QR Code</span>
+            </button></a
+          ><a href=""
+            ><button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-book-user-icon lucide-book-user"
+              >
+                <path d="M15 13a3 3 0 1 0-6 0" />
+                <path
+                  d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"
+                />
+                <circle cx="12" cy="8" r="2" /></svg
+              ><span>Add by Contacts</span>
+            </button></a
+          ><a href=""
+            ><button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-book-a-icon lucide-book-a"
+              >
+                <path
+                  d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"
+                />
+                <path d="m8 13 4-7 4 7" />
+                <path d="M9.1 11h5.7" /></svg
+              ><span>Add by ID</span>
+            </button></a
+          ><a href=""
+            ><button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-mail-icon lucide-mail"
+              >
+                <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+                <rect x="2" y="4" width="20" height="16" rx="2" /></svg
+              ><span>Invite</span>
+            </button></a
+          >
+        </section>
+        <hr />
+        <section class="recommended-friends">
+          <div class="section-title">
+            <h3>Recommended Friends</h3>
+          </div>
+          <p>You have no recommended friends at this time.</p>
+        </section>
+        <hr />
+        <section class="open-chat">
+          <div class="section-title">
+            <h3>Open Chat</h3>
+            <a href=""
+              ><span>Go to Openchat Home</span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-chevron-right-icon lucide-chevron-right"
+              >
+                <path d="m9 18 6-6-6-6" /></svg
+            ></a>
+          </div>
+          <ul class="open-chat-list">
+            <li class="open-chat__item">
+              <div class="open-chat__item__info">
+                <h4 class="open-chat__item__title">Chat 1</h4>
+                <p class="open-chat__item__description">
+                  Description for Chat 1
+                </p>
+                <div class="open-chat__item__detailed-info">
+                  <div class="open-chat__item__founder-profile profile-picture">
+                    <img src="" alt="" />
+                  </div>
+                  <span class="open-chat__item__number-of-members"
+                    >245 members |</span
+                  >
+                  <span class="open-chat__item__last-active"
+                    >Last active: 2 hours ago</span
+                  >
+                </div>
+              </div>
+              <div class="open-chat__item__cover"><img src="" alt="" /></div>
+            </li>
+            <li class="open-chat__item">
+              <div class="open-chat__item__info">
+                <h4 class="open-chat__item__title">Chat 2</h4>
+                <p class="open-chat__item__description">
+                  Description for Chat 2
+                </p>
+                <div class="open-chat__item__detailed-info">
+                  <div class="open-chat__item__founder-profile profile-picture">
+                    <img src="" alt="" />
+                  </div>
+                  <span class="open-chat__item__number-of-members"
+                    >180 members |</span
+                  >
+                  <span class="open-chat__item__last-active"
+                    >Last active: 5 hours ago</span
+                  >
+                </div>
+              </div>
+              <div class="open-chat__item__cover"><img src="" alt="" /></div>
+            </li>
+          </ul>
+        </section>
       </div>
-      <div class="status-bar__center"><span>17:09</span></div>
-      <div class="status-bar__right">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-bell-off-icon lucide-bell-off"
-        >
-          <path d="M10.268 21a2 2 0 0 0 3.464 0" />
-          <path
-            d="M17 17H4a1 1 0 0 1-.74-1.673C4.59 13.956 6 12.499 6 8a6 6 0 0 1 .258-1.742"
-          />
-          <path d="m2 2 20 20" />
-          <path d="M8.668 3.01A6 6 0 0 1 18 8c0 2.687.77 4.653 1.707 6.05" />
-        </svg>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-alarm-clock-icon lucide-alarm-clock"
-        >
-          <circle cx="12" cy="13" r="8" />
-          <path d="M12 9v4l2 2" />
-          <path d="M5 3 2 6" />
-          <path d="m22 6-3-3" />
-          <path d="M6.38 18.7 4 21" />
-          <path d="M17.64 18.67 20 21" />
-        </svg>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-battery-low-icon lucide-battery-low"
-        >
-          <path d="M22 14v-4" />
-          <path d="M6 14v-4" />
-          <rect x="2" y="6" width="16" height="12" rx="2" />
-        </svg>
-      </div>
-    </section>
-    <section class="content"></section>
-    <section class="navigation">
-      <button class="nav-button">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-user-round-icon lucide-user-round"
-        >
-          <circle cx="12" cy="8" r="5" />
-          <path d="M20 21a8 8 0 0 0-16 0" />
-        </svg>
-      </button>
-      <button class="nav-button">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-message-circle-icon lucide-message-circle"
-        >
-          <path
-            d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"
-          />
-        </svg>
-      </button>
-      <button class="nav-button">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-search-icon lucide-search"
-        >
-          <path d="m21 21-4.34-4.34" />
-          <circle cx="11" cy="11" r="8" />
-        </svg>
-      </button>
-      <button class="nav-button">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="lucide lucide-ellipsis-icon lucide-ellipsis"
-        >
-          <circle cx="12" cy="12" r="1" />
-          <circle cx="19" cy="12" r="1" />
-          <circle cx="5" cy="12" r="1" />
-        </svg>
-      </button>
-    </section>
+      <section class="common__navigation">
+        <a href="friends.html">
+          <button class="nav-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-user-round-icon lucide-user-round"
+            >
+              <circle cx="12" cy="8" r="5" />
+              <path d="M20 21a8 8 0 0 0-16 0" />
+            </svg></button
+        ></a>
+        <a href="chats.html"
+          ><button class="nav-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-message-circle-icon lucide-message-circle"
+            >
+              <path
+                d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"
+              />
+            </svg></button
+        ></a>
+        <a href="find.html"
+          ><button class="nav-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-search-icon lucide-search"
+            >
+              <path d="m21 21-4.34-4.34" />
+              <circle cx="11" cy="11" r="8" />
+            </svg></button
+        ></a>
+        <a href="more.html"
+          ><button class="nav-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-ellipsis-icon lucide-ellipsis"
+            >
+              <circle cx="12" cy="12" r="1" />
+              <circle cx="19" cy="12" r="1" />
+              <circle cx="5" cy="12" r="1" />
+            </svg></button
+        ></a>
+      </section>
+    </div>
     <div id="no-mobile">
       <span>모바일📱에서만 사용 가능해요.</span>
     </div>

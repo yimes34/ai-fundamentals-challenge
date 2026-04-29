@@ -1,0 +1,211 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+}
+/* 지울 것 */
+section {
+  border: solid 1px red;
+  padding: 1rem;
+}
+
+.common__status-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 30px;
+}
+
+.common__status-bar > div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+
+.common__status-bar > div > svg {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: calc(100vh - 30px);
+}
+
+.common__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 3rem;
+  background-color: #eeeeee;
+  border-top: solid 3px #cccccc;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.common__navigation > a > button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+}
+
+.common__navigation > a > button > svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  stroke-width: 3px;
+}
+
+#no-mobile {
+  position: absolute;
+  z-index: 99;
+  height: 100vh;
+  background-color: #ff4081;
+  color: white;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  top: 0;
+}
+
+@media screen and (max-width: 520px) {
+  #no-mobile {
+    display: none;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-family: "inter", sans-serif;
+  font-weight: 700;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 100%;
+  position: relative;
+  top: 0;
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header__actions > a > button {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.header__actions > a > button > svg {
+  width: 1.8rem;
+  height: 1.8rem;
+  stroke-width: 2px;
+  color: #333333;
+}
+
+.profile-picture {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 40% 40% 40% 40% / 35% 35% 35% 35%;
+  background-color: blueviolet;
+}
+
+.section-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.section-title > h3 {
+  font-size: 0.9rem;
+  font-family: "inter", sans-serif;
+  font-weight: 400;
+  color: #666666;
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #666666;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+li > h4 {
+  flex: 1;
+  font-size: 1.1rem;
+  font-family: "inter", sans-serif;
+  font-weight: 500;
+}
