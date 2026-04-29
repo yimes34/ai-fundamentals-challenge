@@ -37,7 +37,6 @@ p {
 }
 /* 지울 것 */
 section {
-  border: solid 1px red;
   padding: 1rem;
 }
 
@@ -70,7 +69,8 @@ section {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: calc(100vh - 30px);
+  height: calc(100vh - 100px);
+  overflow: scroll;
 }
 
 .common__navigation {

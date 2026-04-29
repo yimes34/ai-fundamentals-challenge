@@ -1,0 +1,71 @@
+.berry-pay {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  background-color: #ff4081;
+  margin: 1rem;
+  border-radius: 10px;
+  color: white;
+}
+
+.berry-pay__status {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 500;
+}
+
+.berry-pay__status > svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  stroke-width: 2px;
+}
+
+.berry-pay__actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.berry-pay__actions > button {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+.berry-pay__actions > button > svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  stroke-width: 2px;
+}
+
+.other-actions {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 2rem 0.5rem;
+}
+
+.other-actions > button {
+  width: 6.85rem;
+  background: none;
+  border: none;
+  color: #333333;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+.other-actions > button > svg {
+  width: 2.3rem;
+  height: 2.3rem;
+  stroke-width: 2px;
+  color: #333333;
+}
